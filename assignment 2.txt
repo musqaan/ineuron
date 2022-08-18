@@ -1,0 +1,148 @@
+MUSKAN SHAIKH
+Q1 WRITE SCRIPT TO ADD COMMENTS AND PRINT "LEARNING PYTHON "ON THE SCREEN
+#TO PRINT LERANIG PYTHON    (python comment)
+print("learning python")
+learning python
+Q2 WRITE APYTHON SCRIPT TO ADD MULT ILINE COMMENT AND PRINT OF FOUR VARIABLES EACH LINE IN A NEW LINE VARIABLE CONTAIN ANY VALUE.
+"""
+WRITE APYTHON SCRIPT TO ADD MULT ILINE COMMENT AND PRINT OF FOUR VARIABLES EACH LINE IN A NEW LINE VARIABLE CONTAIN ANY VALUE.
+"""
+'\nWRITE APYTHON SCRIPT TO ADD MULT ILINE COMMENT AND PRINT OF FOUR VARIABLES EACH LINE IN A NEW LINE VARIABLE CONTAIN ANY VALUE.\n\n'
+a=3
+b=6
+c=9
+d=12
+print(a,b,c,d, sep="\n")
+3
+6
+9
+12
+Q3 WRITE A PYTHON SCRIPT TO TO PRINT TYPE OF VARIABLE CREATE 5 VARIABL
+a=5
+type(a)
+<class 'int'>
+b="muskan"
+type(b)
+<class 'str'>
+c=4.6
+type(c)
+<class 'float'>
+D=4+2J
+type(D)
+<class 'complex'
+e=False
+type(e)
+<class 'bool'>
+Q4 WRITE A PYTHON SCRIPT TO PRINT ID OF TWO VARIABLE CONTAING THE SAME INTEGER
+a=5
+b=5
+id(a)
+2701091078512
+id(b)
+2701091078512
+Q5 CREATE FOUR VARIABLES IN PYTHON SCRIPT AND ASSIGN VALUE OF DIFFERENT DATA TYPE TO THE ITEM .WRITE A PYTHON SCRIPT TO PRINT VALUE IT TYPE AND ID OF EACH VARABLE
+a=6
+b="mukan"
+c=5.6
+d=2+6j
+print(a,b,c,d,sep="\n")
+      
+6
+mukan
+5.6
+(2+6j)
+type(a)
+      
+<class 'int'>
+type(b)
+      
+<class 'str'>
+type(c)
+      
+<class 'float'>
+type(d)
+      
+<class 'complex'>
+id(a)
+      
+2565009703312
+id(b)
+      
+2565050738224
+id(c) 
+      
+2565019891696
+id(d)
+      
+2565049248944
+
+Q6 WRITE A PYTHON SCRIPT TO PRINT ALL THE KEYWORD
+help("keywords")
+     
+
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not                 
+Q7ON PYTHON SHELL USE HELP() FUCNTION AND DISPLAY THE LIST OF KEYWORD help()
+
+Welcome to Python 3.10's help utility!
+
+If this is your first time using Python, you should definitely check out
+the tutorial on the internet at https://docs.python.org/3.10/tutorial/.
+
+Enter the name of any module, keyword, or topic to get help on writing
+Python programs and using Python modules.  To quit this help utility and
+return to the interpreter, just type "quit".
+
+To get a list of available modules, keywords, symbols, or topics, type
+"modules", "keywords", "symbols", or "topics".  Each module also comes
+with a one-line summary of what it does; to list the modules whose name
+or summary contain a given string such as "spam", type "modules spam".
+
+help> keywords
+
+Here is a list of the Python keywords.  Enter any keyword to get more help.
+
+False               class               from                or
+None                continue            global              pass
+True                def                 if                  raise
+and                 del                 import              return
+as                  elif                in                  try
+assert              else                is                  while
+async               except              lambda              with
+await               finally             nonlocal            yield
+break               for                 not                 
+Q8 CREATE TWO PYTHON FILE A0.PY AND A1.PY AND ASSIGN OME VALUE TO IT .WRITE APYTHON CIPT TO IMPRORT A1 MODULE IN A0 AND PRINT VALUE OF THE VARIABLE CREATED IN A0.PY.
+TO DISPLAYT
+inside A0.PY FILE
+a=5
+inside A1.PY FILE
+
+import A1
+print(A0.a) 
+
+Inide shell:
+5
+
+Q9NAME THE KEYWORD USED AS DATA IN PYTHON SCIPT.
+1.True
+2.False
+Q10.WRITE A PYTHON SCRIPT TO DISPLAY THE CURRENT DATE AND TIME .FIRST CREATE VARIABLE TO STORE DATE AND TIME,THEN DIPLAY AND TIME IN PROPER FORMAT. 
+d=input("enter current date")
+enter current date 18 aug
+t=input("enter current time")
+enter current time 7:46 am
+print(d,t,sep="\n")
+ 18 aug
+ 7:46 am
+
+
+
