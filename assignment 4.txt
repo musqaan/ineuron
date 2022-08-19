@@ -1,0 +1,103 @@
+
+ ASSIGNMENT 4
+ MUSKAN SHAIKH
+
+q1 write python script to take your name as input and print it
+a = input("enter your name")
+        
+enter your name muskan shaikh
+print(a)
+        
+ muskan shaikh
+
+q2 write apython script to take input from user.input must be in number.
+b=input("enter a number")
+        
+enter a number 12.6
+print(b)
+        
+ 12.6
+
+q3 write a python script which take two numbes from user.then calculate there sum and display it.
+
+a=int(input("enter the number"))
+        
+enter the number 56
+b=int(input("enter the number"))
+        
+enter the number96
+z=a+b        
+print(z)        
+152
+
+q4 write the python script which take thr radius of circle and display are of circle.
+
+#to find area of circle
+q=3.14
+
+a=float(input("enter the radius of circle"))
+enter the radius of circle 6
+b=q*a*a
+print(b)
+113.03999999999999
+q5.write a python script to find the square of a number,number is enterd by users.
+
+#to find square of number
+a=int(input("enter the nymber"))
+enter the nymber 12
+b=a*a
+print(b)
+144
+
+q6 write a python script to calculate area of triangle. numberis enterd y user.
+
+a=int(input("enter the lenth of triangle"))
+enter the lenth of triangle 6
+b=int(input("enter the breadth of triangle"))
+enter the breadth of triangle 3
+z=0.5*a*b
+print(z)
+9.0
+
+q7 write a python script to calculate average of three numbers ,enterd by user.
+a=int(input("enter the first numbar"))
+enter the first numbar 10
+b=int(input("enter the second number"))
+enter the second number 6
+c=int(input("enter the third number "))
+enter the third number 8
+d=(a+b+c)/3
+print("the average of three number is",d)
+the average of three number is 8.0
+
+q8 write a python script to calculate simple interest.
+p=int(input("enter the principal amount"))
+enter the principal amount 3000
+r=float(input("enter the rate of interest"))
+enter the rate of interest 2.9
+enter period of time 2
+si=(p*r*t)/100
+print("simple interest is ",si)
+simple interest is  174.0
+
+q9 write a python script to find volume of cuboid.
+w=int (input("enter the width of cuboid"))
+enter the width of cuboid 6
+h=int(input("enter the height of cuboid"))
+enter the height of cuboid 7
+l=int(input ("enter the the lengh of cuboid"))
+enter the the lengh of cuboid 7
+v=w*l*h
+print("volume of cuboid is ",v)
+volume of cuboid is  294
+ 
+q10 write a python script to calculate area of recatangle.
+
+l=int(input("enter the length of rectangle"))
+enter the length of rectangle 9
+b=int(input("breadth of rectangle is"))
+breadth of rectangle is 6
+a=l*b
+print("area of rectangle is",a)
+area of rectangle is 54
+
