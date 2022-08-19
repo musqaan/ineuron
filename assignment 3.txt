@@ -1,0 +1,67 @@
+ASSIGNMENT 3
+MUSKAN SHAIKH
+
+q1 write a python script to convert a number into str type
+a=5
+type(a)
+<class 'int'>
+str(a)
+'5'
+
+q2write a python script to  print unicode of the character 'm'
+x='m'
+ord(x)
+109
+
+q3write a python scipt to print character reprentation of given code 100
+x=100
+chr(x)
+'d'
+
+q4 write a python script to print any number to its binary equivalent.
+x=56
+bin(56)
+'0b1110'
+
+q5 write a python script to print any number and its octtal equivalent.
+x=56
+oct(x)
+'0o70'
+
+q6 write a python script to print any number and its octtal equivalent.
+ x=56
+hex(x)
+'0x38'
+
+q7 write  python script to store binary number 1100101 in  variable and print in decimal format.
+a=1100101
+bin(a)
+'0b100001100100101000101'
+print("decimal format of binary 1100101 is 185")
+decimal format of binary 1100101 is 185
+
+
+
+q8 write a python script to store hexadeciaml number 2f in a variable and print it in octal form.
+ b=0x2f
+oct(b)
+'0o57'
+q9 writa a python script to store a an octal number 125 in a variable and print it in binary format.
+d=0o125
+bin(d)
+'0b1010101'
+
+q10 write apython script ad two numbers 25(in octal) and 39(in hexadecimal) and display the result in binary format.
+a=0o25
+b=0x39
+bin(a+b)
+'0b1001110'
+
+
+
+
+
+
+
+
+
