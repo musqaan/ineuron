@@ -1,0 +1,75 @@
+ASSIGNMENT 5
+MUSKAN SHAIKH
+q1 write a python script to remove the last digit from given number .(if user enter 
+2534 then your output should be 253
+
+a=2534
+print(int(str(a)[:-1]))
+253
+
+q2 write a python script to get the last digit from a given number (user enter 2089 
+the your output shold be 9
+n=int(input("enter a number"))
+n=n%10
+print("last digit number is=",n)
+enter a number 2089
+last digit number is= 9
+
+q3 write a python script to swap th data.
+a=int(input("enter a number a "))
+b=int(input("enter a number b "))
+temp=a
+a=b
+b=temp
+print("a=",a)
+print("b=",b)
+enter a number a 3
+enter a number b 2
+a= 2
+b= 3
+      
+q4 write a python script to find x power y.where value of x and y are given by user
+x=int(input("enter the value of x"))           
+enter the value of x 2
+y=int(input("enter the value of y"))
+            
+enter the value of y 6
+z=x**y            
+print("x power y is",z)
+x power y is 64
+
+q5 write a python script to take a three digit of number from the user and display only its one digit.
+a=(input("enter a number a "))
+print(a[0])
+enter a number a 123
+1
+      
+q6 write a python script to take a three digit of number from the user and display only its middle digit.
+a=(input("enter a number a "))
+print(a[1])
+enter a number a 123
+2
+
+q7  write a python script to take a three digit of number from the user and display only its last digit.
+a=(input("enter a number a "))
+print(a[2])
+enter a number a 123
+
+      
+
+q8  write a python script to use IN OPERATOR to display the data not present in list.
+a="muskan"
+print('m' in a)
+True
+
+q9 write a python script use NOT IN operator to display the data not present in list.
+a="muskan"
+print('M' not in a)
+True
+
+q10 write a python script to use IS OPERATOR to display if both vaiable are the same object or not.
+a=1
+b=1
+print(a is not b)
+Flase
+   
