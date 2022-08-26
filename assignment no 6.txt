@@ -1,0 +1,138 @@
+Q1 
+n=int(input("enetr a number"))
+if n>0:
+    print("positive")
+else:
+    print("non positive")
+
+
+output:
+enter a number 8
+positive
+
+Q2
+n=int(input("enetr a number"))
+if n%5==0:
+    print("given numbern is divisible by 5")
+else:
+    print("given number is not divisible by 5 ")
+output:
+enetr a nuber 8
+given number is not dividible by 5
+
+Q3
+n=int(input("enetr a number"))
+if n%2==0:
+    print("given numbern is even")
+else:
+    print("given number is odd ")
+output:
+enter a number 658
+given number is even
+
+Q4 
+a=int(input("enter the fisrt number"))
+b=int(input("enter the second number"))
+if a>b:
+    print("greter number is a:",a)
+if (a==b):
+    print("print only once"a)
+
+else:
+    print("greter number is b",b)
+enter the fisrt number 67
+enter the second number89
+greter number is b 89
+
+Q5
+a=input("enter a first  word")
+b=input("enter a  second word")
+if a<b:
+    print(a,b)
+else:
+    print(b,a)
+enter a first  word megha
+enter a  second word rekha
+ megha  rekha
+
+ 
+Q6
+
+a=int(input("enter a number"))
+if (a>=100 and a<=999):
+    print("three digit number")
+else:
+    print("not a three digit number")
+enter a number 566
+three digit number
+
+
+Q7
+
+a=int(input("enter a number"))
+if a>0:
+    print(" number is positive")
+elif a<0:
+    print(" number is negative")
+else :
+    print("number is zero")
+enter a number -9
+ number is negative
+
+Q9
+y=int(input("enter a year"))
+if (y%4==0 and y%100!=0 or y%4==0):
+    print("year is a leap year")
+else:
+    print("year isn't leap year")
+enter a year 2016
+year is a leap year
+      
+Q10
+
+a=int(input("enter the fisrt number"))
+b=int(input("enter the second number"))
+if a>b:
+    print("greter number is a:",a)
+if (a==b):
+    print("print only once"a)
+
+else:
+    print("greter number is b",b)
+enter the fisrt number 67
+enter the second number89
+greter number is b 89
+
+Q11
+n=int(input("enter a month number"))
+if n==2:
+    print("number of days 28/29")
+elif(n==1 or n==3 or n==5 or n==7 or n==8 or n==10 or n==12):
+    print("number of days 31")
+elif(n==4 or n==6 or n==9 or n==11):
+    print("number of days 30")
+else:
+    print("month is not exist")
+enter a month number 4
+number of days 30
+
+======================================================== RESTART: C:\Users\ADMIN\Desktop\python\program.py ========================================================
+enter a month number 13
+month is not exist
+ 
+Q12
+a=complex(input("enter a number"))
+b=complex(input("enter a number"))
+cn=complex(a,b)
+print("complex number=",cn)
+print("complex number=real part:",cn.real)
+print("complex number=imaginary part:",cn.imag)
+enter a number 6
+enter a number9
+complex number= (6+9j)
+complex number=real part: 6.0
+complex number=imaginary part: 9.0
+
+
+       
+       
