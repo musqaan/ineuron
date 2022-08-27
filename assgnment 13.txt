@@ -1,0 +1,87 @@
+assgnment 13
+muskan shaikh
+Q1
+L1=["java","python","sql","c"]
+L1
+['java', 'python', 'sql', 'c']
+
+Q2
+L1=["java","python","sql","c"]
+L1
+['java', 'python', 'sql', 'c']
+
+Q3
+l1=("java","c","python")
+l1[-1]
+'python'
+Q4
+l1=["java","reactnative","javascript","javascript","python"]
+l1[1]="NOSQL"
+l1
+['java', 'NOSQL', 'javascript', 'javascript', 'python']
+
+Q5
+mylist=["java","SQL","c","reactnative"]
+mylist[-1]="python"
+mylist
+['java', 'SQL', 'c', 'python']
+
+Q6
+firstlist=["java","python","SQL"]
+secondlist=["c","cpp","NOSQL"]
+firstlist.append(secondlist)
+firstlist
+['java', 'python', 'SQL', ['c', 'cpp', 'NOSQL']]
+
+Q7
+thelist=["java","SQL","C","REACTNATIVE","JAVASCRIPT","PYTHON"]
+thelist[0]
+'java'
+thelist[1]
+'SQL'
+thelist[2]
+'C'
+thelist[3]
+'REACTNATIVE'
+thelist[4]
+'JAVASCRIPT'
+thelist[5]
+'PYTHON'
+Q8
+thelist=["java","SQL","C","reactjs","JAVASCRIPT","PYTHON"]
+sorted(thelist)
+['C', 'JAVASCRIPT', 'PYTHON', 'SQL', 'java', 'reactjs']
+
+Q9
+a=input("enter the city name")
+enter the city name pune
+b=input("enter the city name")
+enter the city name mumbai
+c=input("enter the city name")
+enter the city name nagpur
+l1[a,b,c]
+l1=[a,b,c]
+l1
+[' pune', ' mumbai', ' nagpur']
+
+Q10print("how many number you want to enter")
+n=int(input())
+print("enter some number")
+l1=[]
+i=0
+while i<n:
+    l1.append(int(input()))
+    i+=1
+
+print(l1)
+how many number you want to enter
+5
+enter some number
+1
+2
+6
+9
+7
+[1, 2, 6, 9, 7]
+
+
