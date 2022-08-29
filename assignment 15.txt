@@ -1,0 +1,82 @@
+assignment 15
+muskan shaikh
+Q1
+print("hellow word")
+hellow word    
+print("\"hellow word\"")       
+"hellow word"
+print('''"hellow word"''')      
+"hellow word"
+
+Q2
+a="ineuron"
+a[1:5:1]
+'neur'
+
+Q3
+b="hellow learners"
+b[2:5:1]
+'llo'
+
+
+Q4
+a="learning"
+b="python"
+c=a+" "+b
+print(c)
+learning python
+
+Q5
+a="ineuron"
+count=0
+for i in range(len(a)):
+    if (a[i].isalpha()):
+        count+=1
+        print(count)
+7
+Q6
+a="ineuron"
+d=list(reversed(a))
+print(d)
+['n', 'o', 'r', 'u', 'e', 'n', 'i']
+
+Q7
+fullstring="muskanshaikh"
+substring="shaikh"
+if substring in fullstring:
+    print("found")
+else :
+    print("NOT FOUND")
+
+    
+found
+
+Q8
+txt="muskan"
+x=txt.isalpha()
+print(x)
+True
+
+Q9
+c="456"
+          
+d=c.isalnum()
+          
+print(d)
+          
+True
+Q10
+a=8
+type(a)
+          
+<class 'int'>
+conver=str(a)
+          
+print("integer is convertd to sting:",conver)
+          
+integer is convertd to sting: 8
+type(conver)
+          
+<class 'str'>
+
+
