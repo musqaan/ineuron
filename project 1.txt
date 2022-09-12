@@ -1,0 +1,78 @@
+     PROJECT 1 (PYTHON)
+     MUSKAN shaikh
+
+def printn():
+ print("ARRANGE THE WORDS LETTERS TO FORM A VALID WORD")
+printn()
+score=0
+s1=['u s k a n m']
+print(s1)
+w=input()
+if w=='muskan':
+    score+=1
+    print("CORRECCT",score)
+else:
+    score-=1
+    print("WRONG",score)
+printn()
+s2=['m a h a z']
+print(s2)
+w=input()
+if w=='hamza':
+    score+=1
+    print("CORRECCT",score)
+else:
+    score-=1
+    print("WRONG",score)
+printn()
+s3=['i o l b o g y']
+print(s3)
+w=input()
+if w=='biology':
+    score+=1
+    print("CORRECCT",score)
+else:
+    score-=1
+    print("WRONG",score)
+printn()
+s4=['o o l h c s']
+print(s4)
+w=input()
+if w=='school':
+    score+=1
+    print("CORRECCT",score)
+else:
+    score-=1
+    print("WRONG",score)
+printn()
+s5=['y b a b']
+print(s5)
+w=input()
+if w=='baby':
+    score+=1
+    print("CORRECCT",score)
+else:
+
+
+OUTPUT:
+ARRANGE THE WORDS LETTERS TO FORM A VALID WORD
+['u s k a n m']
+muskan
+CORRECCT 1
+ARRANGE THE WORDS LETTERS TO FORM A VALID WORD
+['m a h a z']
+hamza
+CORRECCT 2
+ARRANGE THE WORDS LETTERS TO FORM A VALID WORD
+['i o l b o g y']
+biology
+CORRECCT 3
+ARRANGE THE WORDS LETTERS TO FORM A VALID WORD
+['o o l h c s']
+school
+CORRECCT 4
+ARRANGE THE WORDS LETTERS TO FORM A VALID WORD
+['y b a b']
+baby
+CORRECCT 5
+CONGRATES YOU WIN THE GAME!
