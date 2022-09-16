@@ -1,0 +1,225 @@
+assignment no 7
+muskan shaikh
+Q1 write a pyhton program to display number of days in given month number.
+month=int(input("month number"))
+match month:
+ case  month if month in (1,3,5,7,8,10,12):
+        print("31 days")
+
+ case  month if month in(4,6,9,11):
+         print("30 days")
+ case  month if month==2:
+         print("28 or 29 days")
+ case _:
+         print("invalid month number")
+output:
+month number 7
+31 days
+
+Q2 write a python program to perform following operation addition ,substraction,multiplication and division.
+print("1.addition")
+print("2.substraction")
+print("3.multiplication")
+print("4.division")
+print("enter your choice")
+choice=int(input())
+match choice:
+        case 1:
+                print("enter two number")
+                a,b=int(input()),int(input())
+                c=a+b
+                print(c)
+        case 2:
+                print("enter two number")
+                a,b=int(input()),int(input())
+                c=a-b
+                print(c)
+        case 3:
+                print("enter two number")
+                a,b=int(input()),int(input())
+                c=a*b
+                print(c)       
+        case 4:
+                print("enter two number")
+                a,b=int(input()),int(input())
+                c=a%b
+                print(c)          
+output:
+1.addition
+2.substraction
+3.multiplication
+4.division
+enter your choice
+4
+5
+5                
+                
+Q4 print("1.isoscales triangle")
+print("2.right angle triangle")
+print("3.equlilateral triangle")
+print("4.exit")
+print("enter your choice")
+choice=int(input())
+match choice:
+        case 1:
+                print("enter three number")
+                a,b,c=int(input()),int(input()),int(input())
+                if (a==b or b==c):
+                 print("given tringle is isoscales triangle")
+                else:
+                 print("given triangle is not isoscales triangle")
+        case 2:
+                print("enter three number")
+                a,b,c=int(input()),int(input()),int(input())
+                if (c**2)==(a**2)+(b**2):
+                 print("given tringle is right angle tringle")
+                else:
+                  print("given triangle is not a right angle traingle")
+                  
+        case 3:
+                print("enter two n  a,b,c=int(input()),int(input()),int(input())
+                if (a==b==c):
+                 print("given triangle is equilateral triangle")
+                else:
+                 print("given triangle is not a equilateral triangle")
+        case 4:
+                exit()
+                
+                      
+OUTPUT:
+1.isoscales triangle
+2.right angle triangle
+3.equlilateral triangle
+4.exit
+enter your choice
+1
+enter three number
+4
+8
+8
+given tringle is isoscales triangle
+
+Q4    
+age=int(input("enter the age of person"))
+match age:
+    case age if age<10:
+        print("kid")
+    case age if age<20:
+        print("teen")
+    case age if age<40:
+        print("ypung")
+    case age if age<60:
+        print("experienced")
+    case age if age>=60:
+        print("senior citizens")
+output:
+enter the age of person 100
+senior citizens
+
+Q5                 
+n=int(input("enter the number"))
+match n:
+    case n  if n%2==0:
+        print("suarabh shukla")
+    case n if 0>n and n%2!=0:
+        print("prateek jain")
+    case n if n<0 and n%2==0:
+        print("aditya choudhary")
+    
+output:enter the age of person 6
+suarabh shukla
+
+Q6
+string=input("enter the string  ")
+match string:
+    case string if string==" ":
+        print("string is multiword")
+    case string if string!=" ":
+        print("string is single word")
+  output:
+enter the string  muskan
+string is singleword
+
+Q7
+n=int(input("enter the number  "))
+match n:
+    case n if n>0:
+        print("number is positive")
+    case n if n<0:
+        print("number is negative")
+    case n if n==0:
+        print("number is zero")
+output:
+enter the number  8
+number is positive
+
+Q8
+a=input("enter a string :")
+b=input("enter a tsring :")
+match (a,b):
+    case (a,b) if a==b:
+        print("given string is identical")
+    case (a,b) if a<b:
+        print(a,"a comes first before ",b)
+    case (a,b) if a>b:
+        print(b,"b comes first before ",a)
+output:      
+enter a string : muskan
+enter a tsring :sohel
+ muskan a comes first before  sohel
+
+Q9
+year=int(input("enter the year"))
+match year:
+    case year if year%100!=0 and year%4==0:
+        print("given year is non centuary leap yaer")
+    case year if year%100==0 and year%4==0:
+        print("given year is centuary leap year")
+    case year if year%100!=0 and year%4!=0:
+        print("given year is non centuary and non leap yaer")
+    case year if year%100==0 and year%4!=0:
+        print("given year is centuray non leap year")
+output:
+enter the year 2000
+given year is centuary leap year
+
+Q10
+s=input("which colour did ypu like?")
+l=["yellow","blue","orange","white","black","red"]
+for colour in l:
+   if colour in s:
+     c=colour
+     break
+   else:
+      c="other"
+   match c :
+        case  "yellow":
+          print("monday")
+        case "blue":
+          print("tuesday")
+        case "orange":
+          print("wednesday")
+        case "white":
+          print("thursday")
+        case  "black":
+          print("friday")
+        case  "red":
+          print("saturday")
+        case  "other":
+          print("sunday")
+     
+
+        
+        
+
+    
+
+
+
+
+
+
+
+
+
+       
