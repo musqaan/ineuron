@@ -1,0 +1,228 @@
+assignment 25
+muskan shaikh
+Q1 Write a pyhton program create a profile class with  attributes(name,email,age)
+class person:
+    def __init__(self,name,email,age):
+        self.name=name
+        self.email=email
+        self.age=age
+
+
+p1=person("muskan","muskan@email.com",19)
+print(p1.name,p1.email,p1.age)
+output:
+muskan muskan@email.com 19
+
+Q2 write a python script to update the above profile class with encapsulation.
+class person:
+    def __init__(self):
+        self.name="muskan"
+        self.email="muskan@email.com"
+        self.age=19
+    def update(self):
+        self.name=print("rahil")
+        self.email=print("rahil@email.com")
+        self.age=print(20)
+
+p1=person()
+p1.update()
+output:
+rahil
+rahil@email.com
+20
+
+Q3 write a python script to update 2nd q,change email and ege to __email and __age.
+Q4 write a python script to update 2nd question ,add class variablen(platform) and create a classmethod to aceeses it.
+class person:
+    platform="ineuron"
+    def __init__(self):
+        self.name="muskan"
+        self.email="muskan@email.com"
+        self.age=19
+    def update(self):
+        self.name=print("rahil")
+        self.email=print("rahil@email.com")
+        self.age=print(20)
+    @classmethod
+    def get_platform(cls):  #classmethod
+       return cls.platform
+p1=person()
+print(person.get_platform())
+output:
+ineuron
+
+Q5 write a python script to craete calculator with methods for adding and subsracting.
+class calculator:
+    @staticmethod
+    def add():
+        a=10
+        b=20
+        c=a+b
+        return c
+    @staticmethod
+    def sub():
+        x=14
+        y=9
+        z=x-y
+        return z
+c1=calculator()
+print(c1.add())
+print(c1.sub())
+output:
+30
+5
+
+Q6 write a python script a calculator 2.0 class with 2 methods for multipliction and division of 2 values
+and inherit it from the calculator class
+class calculator:
+    @staticmethod
+    def add():
+        a=10
+        b=20
+        c=a+b
+        return c
+    @staticmethod
+    def sub():
+        x=14
+        y=9
+        z=x-y
+        return z
+class calculator2 (calculator):
+    @staticmethod
+    def mult():
+        a=4
+        b=9
+        c=a*b
+        return c
+    @staticmethod
+    def div():
+        x=30
+        y=6
+        z=x/y
+        return z
+c1=calculator2()
+print(c1.add())
+print(c1.sub())
+print(c1.mult())
+print(c1.div())
+ output:
+30
+5
+36
+5.0
+
+Q7 write a python script to create smartphon class by with 2 methods to print the feutures of
+(calling and sms)
+class phone:
+    @staticmethod
+    def feutures():
+        print("sms..")
+    def __init__(self):
+        print("calling...")
+
+s1=tphone()
+s1.feutures()
+output:
+calling...
+sms..
+
+Q8 write a to create a smartphone class by iheriting calculator2  and phone class.
+class calculator2 :
+    @staticmethod
+    def mult():
+        a=4
+        b=9
+        c=a*b
+        return c
+    @staticmethod
+    def div():
+        x=30
+        y=6
+        z=x/y
+        return z
+class phone:
+    
+    def feutures(self):
+        print("sms..")
+    def __init__(self):
+        print("calling...")
+class smartphon(calculator2,phone):
+
+    def feutures(self):
+        print("sms..")
+    def feutures_2(self):
+        print("calling...")
+
+s1=smartphon()
+print(s1.mult())
+s1.feutures()
+output:
+calling...
+36
+sms..
+
+Q9 write a python script to create an application like truecaller where names and numbers are stored.truecaller class.
+will have 2 methods (1st to fetch the name of a number and 2nd to add a new entry).
+class truecaller:
+    def __init__(self):
+        self.name=input("enter the name:")
+        self.number=int(input("enter the number:"))
+    def fetch(self):
+        print(self.name)
+        print(self.number)
+    def add(self):
+        self.name="kafiya"
+        self.number=9623312559
+        print("new number and name")
+        print(self.name)
+        print(self.number)
+        
+t1=truecaller()
+t1.fetch()
+t1.add()
+output:
+enter the name:muskan
+enter the number:7218353473
+muskan
+7218353473
+new number and name
+kafiya
+9623312559
+
+Q10 write a python script to add the new method in smartphone class which accepts truecaller object as a parameter and call
+the fetch method truecaller.
+class truecaller:
+    def __init__(self):
+        self.name=input("enter the name:")
+        self.number=int(input("enter the number:"))
+    def fetch(self):
+        print(self.name)
+        print(self.number)
+    def add(self):```ewq
+        self.name="kafiya"
+        self.number=9623312559
+        print("new number and name")
+        print(self.name)
+        print(self.number)
+        
+'''t1=truecaller()
+t1.fetch()
+t1.add()'''
+class smartphone(truecaller):
+    def f1(self):
+        print("calll the person")
+
+s1=smartphone()
+s1.fetch()
+s1.add()
+s1.f1()
+    output:
+enter the name:muskan
+enter the number:7218547
+muskan
+7218547
+new number and name
+kafiya
+9623312559
+calll the persoh
+ 
