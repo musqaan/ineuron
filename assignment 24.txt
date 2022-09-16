@@ -1,0 +1,209 @@
+assignment 24 (CLASSES AND OBJECT)
+muskan shaikh
+Q1 write a python program to create a user class with three properties :name,age email.
+class user:
+    def __init__(self,name,age,email):
+      self.name= name
+      self.age=  age
+      self.email=email
+p1=user("muskan",19,"muskan@mail.com")
+print(p1.name)
+print(p1.age)
+print(p1.email)
+output:
+muskan
+19
+muskan@mail.com
+
+Q2 write a program to create a user class with method to greet the user
+class user:
+    def __init__(self,name,age,email):
+      self.name= name
+      self.age=  age
+      self.email=email
+    def greet(self,name):
+       print(self.name+" "+"hellow")
+       
+p1=user("muskan",19,"muskan@mail.com")
+print(p1.name)
+print(p1.age)
+print(p1.email)
+print(p1.greet(" "))
+output:
+muskan
+19
+muskan@mail.com
+muskan hellow
+None
+
+Q3 write a python program to create two object of the user class and assigned different values
+class user:
+    def __init__(self,marks):
+      self.marks=marks
+
+p1=user(19)
+p2=user(20)
+print("marks:",p1.marks)
+print("marks:",p2.marks)
+output:
+marks: 19
+marks: 20
+
+Q4 write a python program to to print default values for user obeject using __init__ method
+class user: 
+    def __init__(self,marks=0):   #default value
+      self.marks=marks
+
+p1=user(19)
+p2=user()
+print("marks:",p1.marks)
+print("marks:",p2.marks)
+output:
+marks: 19
+marks: 0
+
+Q5 write a python program to delete age property of the user.
+class user:
+    school="ineuron"
+    def __init__(self,name,age,email):
+      self.name= name
+      self.age=  age
+      self.email=email
+      
+p1=user("muskan",19,"muskan@mail.com")
+print(p1.name)
+print( p1.age)
+print(p1.email)
+print(user.school)
+del (user.school) 
+output:
+muskan
+19
+muskan@mail.com
+
+
+Q6 write a python program to create 3 user objects and find the youngest of all
+class user:
+      def __init__(self,name,age):
+          self.name=name
+          self.age=age
+    
+u1=user("muskan",23)
+u2=user("rahil",9)
+u3=user("nofil",11)
+if (u1.age>u2.age):
+    print(u2.age,u2.name,"is yougst")
+elif (u2.age>u3.age):
+    print(u3.age,u3.name,"is yougest")
+else:
+    print(u1.age,u1.name,"is youngest")
+output:
+9 rahil is yougst
+
+Q7 write a python program to create laptop class with 4 attributes(brand,ram,cpu,hdd)and 2 methods(showconfig())to print the values
+,__init__ to initalise the values.
+class laptop:
+    
+    def __init__(self):
+        self.brand="dell"
+        self.ram="4gb"
+        self.cpu="siglepocessr"
+        self.hdd=89
+    def showconfig(self):
+        print(self.brand)
+        print(self.ram)
+        print(self.cpu)
+        print(self.hdd)
+
+l1=laptop()
+l1.showconfig()
+output:
+dell
+4gb
+siglepocessr
+89
+
+Q8 wrt 7th qet ,create 3 laptop objects and add them to in list in the sorted order based on ram size.
+class laptop:
+    
+    def __init__(self,brand,ram,cpu,hdd):
+        #self.brand=brand
+        self.ram=ram
+        self.cpu=cpu
+        self.hdd=hdd
+    def showconfig(self):
+        print(self.brand)
+        print(self.ram)
+        print(self.cpu)
+        print(self.hdd)
+
+l1=laptop("dell",4,"multi",56)
+l2=laptop("hp",6,"multi",35)
+l3=laptop("lenevo",8,"multi",56)
+'''l1.showconfig()
+l2.showconfig()
+l3.showconfig()'''
+list2=[l1.ram,l2.ram,l3.ram]
+print((list2))
+print("sorted order of ram size",sorted(list2))
+output:
+[4, 6, 8]
+sorted order of ram size [4, 6, 8]
+
+Q9  write a python program to create the school classes and 3 instance variable and 1 class variable.
+class school:
+    school="alphanso public school"  #calss variable
+    def __init__(self):
+        self.clas=10
+        self.teacher="neha mam"      #instance variable
+        self.subject="science"
+s1=school()
+print(s1.school)
+print(s1.clas)
+print(s1.teacher)
+print(s1.subject)
+output:
+alphanso public school
+10
+neha mam
+science
+
+Q10 define class employee with instance object variable empid,name, salary,write __init__method in the class to intialize object variables 
+also define instance method to input fields and display feild values.
+class employee:
+    def __init__(self):
+        self.empid=int(input("enter emp id :")) 
+        self.name=input("enter the name of employee :")
+        self.salary=int(input("enter the salary of empoyee :"))
+        #@staticmethod
+    def get_info(self):
+          print("empioyee id is :",self.empid,)
+          print("employee name is :",self.name)
+          print("employee salary is",self.salary)
+
+emp1=employee()
+emp2=employee()
+emp3=employee()
+emp1.get_info()
+emp1.get_info()
+emp1.get_info()
+
+output:
+enter emp id :1
+enter the name of employee :muskan
+enter the salary of empoyee :2000
+enter emp id :2
+enter the name of employee :sohel
+enter the salary of empoyee :3000
+enter emp id :3
+enter the name of employee :huzefa
+enter the salary of empoyee :5000
+empioyee id is : 1
+employee name is : muskan
+employee salary is 2000
+empioyee id is : 1
+employee name is : muskan
+employee salary is 2000
+empioyee id is : 1
+employee name is : muskan
+employee salary is 2000
