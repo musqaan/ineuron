@@ -1,0 +1,112 @@
+Assignment - 18 Full Stack Web Development using Python MySirG
+
+Dictionary
+
+1. Write a python program to create and print a dictionary which stores your information.
+(name, age, gender .....)
+dict={"name":"muskan","gender":"female","age":19}
+dict
+{'name': 'muskan', 'gender': 'female', 'age': 19}
+
+2. Write a python program to access the items of a dictionary by referring to its key
+name.
+dict['name']
+     
+'muskan'
+dict['gender']
+     
+'female'
+dict['age']
+     
+19
+
+3. Write a python program to get a list of the values from a dictionary.
+for e in dict.values():
+     print(e)
+
+     
+muskan
+female
+19
+4. Write a python program to change the value of a specific item by referring to its key
+name.
+dict={"name":"muskan","gender":"female","age":19}
+dict['age']=20
+output:
+dict
+{'name': 'muskan', 'gender': 'female', 'age': 20}
+
+5. Write a python program to print all key names in the dictionary, one by one.
+dict={"name":"muskan","gender":"female","age":19}
+dict['age']=20
+dict
+{'name': 'muskan', 'gender': 'female', 'age': 20}
+for e in dict.keys():
+    print(e)
+    #output:
+
+    
+name
+gender
+age
+
+6. Write a python program to create a dictionary that contains three dictionaries.
+(nested)
+myfamily={
+    "child":{
+    "name":"reha",
+    "year":2002
+    },
+    "child2":{
+        "name":"menu",
+        "year":2004
+        },
+    "child3":{
+        "name":"veneu",
+        "year":2006
+        }
+    }
+output:
+myfamily
+{'child': {'name': 'reha', 'year': 2002}, 'child2': {'name': 'menu', 'year': 2004}, 'child3': {'name': 'veneu', 'year': 2006}}
+
+7. Write a python program to create three dictionaries, then create one dictionary that
+will contain the other three dictionaries.
+d1={'a':1,'b':2}
+d2={'c':3,'d':4}
+d3={'e':5,'d':6}
+d4=(d1|d2|d3)
+output:
+d4
+{'a': 1, 'b': 2, 'c': 3, 'd': 6, 'e': 5}
+
+8. Write a python program to convert two lists into a dictionary in a way that item from
+list1 is the key and item from list2 is the value.
+l1=["name","gender","age"]
+l2=["muskan","female",19]
+dict1=dict(zip(l1,l2))
+dict1
+{'name': 'muskan', 'gender': 'female', 'age': 19}
+
+9. Write a python program to merge two python dictionaries into one dictionary.
+d1={'a':1,'b':2}
+d2={'c':3,'d':4}
+d3=(d1|d2)
+d3
+{'a': 1, 'b': 2, 'c': 3, 'd': 4}
+10. Write a python program to get the key of lowest value from the dictionary.
+sample_dict = {
+'C': 92,
+'Java': 66,
+'python":99,
+}
+
+sample_dict = {
+
+'C': 92,
+'Java': 66,
+"python":99
+}
+minvalue=min(sample_dict.values())
+minvalue
+66
