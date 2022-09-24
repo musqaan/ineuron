@@ -1,0 +1,93 @@
+Assignment - 19 Full Stack Web Development using Python MySirG
+
+Functions
+
+1. Write a python program to create a simple function which prints “MySirG” .
+def printn():
+    print("MYsirG")
+printn()
+output:
+MYsirG
+
+2. Write a python program to create a function which expects two arguments and print
+them in the function body.
+def xyz(a,b):
+    print("a:",a)
+    print("b:",b)
+xyz(44,22)
+output:
+a: 44
+b: 22
+
+3. Write a python program to create a function which expects an unknown number of
+arguments.
+def xyz(n):
+    print("n:",n)
+    
+xyz(n=input("enter a number:"))
+output:
+enter a number:7
+n: 7
+
+4. Write a python program to create a function which expects keywards arguments.
+def xyz(n=4,m=0):
+    print("n:",n)
+    print("m:",m)
+xyz()
+output:
+n: 4
+m: 0
+
+5. Write a python program to create a function which expects a list as an argument.
+def xyz(list):
+    print("list:",list)
+    #print("m:",m)
+xyz(list(input("enter a list:")))
+output:
+enter a list:68905
+list: ['6', '8', '9', '0', '5']
+
+6. Write a python program to create a function that finds a maximum of four numbers.
+def max1(n1,n2,n3,n4):
+    m=max(n1,n2,n3,n4)
+    print( m)
+max1(20,30,40,60)
+output:
+60
+
+7. Write a python program to sum all the numbers in a list.
+def list1(list):
+    m=sum(list)
+    print( m)
+list1([20,30,40,60])
+output:
+120
+8. Write a python program to multiply all the numbers in a list.
+def mult(list):
+    m=(list[0]*list[1]*list[2]*list[3])
+    print( m)
+mult([2,3,4,6])
+ouput:
+144
+9. Write a python program to create a function to check whether a number falls in a
+given range.
+def check(n):
+   number=int(input("enter a number:"))
+   if number in range(1,n,1):
+     print( True)
+
+   else:
+       print( False)
+check(20)
+output:
+enter a number:11
+True
+10. Write a python program to create a function to check whether a given number is even or odd
+def check(n):
+   if n%2==0:
+       print(n,"is even")
+   else:
+       print(n,"is odd")
+check(20)
+output:
+20 is even
