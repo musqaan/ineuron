@@ -1,0 +1,89 @@
+Assignment - 17 Full Stack Web Development using Python MySirG
+
+Set
+
+1. Write a python program to store all the programming languages known to you using
+Set.
+s1={"python","java","c","php"}
+#output:
+s1
+{'c', 'java', 'php', 'python'}
+
+2. Write a python program to store your own information {name, age, gender, so on..}
+info={"muskan",19,"female"}
+#output:
+info
+{'muskan', 'female', '19'}
+
+3. Write a python script to get the data type of a Set.
+info={"muskan",19,"female"}
+for e in info:
+    print(e)
+output:
+muskan
+19
+female
+
+4. Write a Python script to find if “Python” is present in the set thisset = {"Java",
+"Python", "Django"}
+info={"java","python","Django"}
+if "python" in info:
+    print("word is exist")
+    
+output:
+word is exist
+
+5. Write a python program to add items from another set to the current set. thisset =
+{"Java", "Python", "SQL"}
+secondset= {"C", "Cpp", "NoSQL"}
+thisset={"python","java","Django"}
+secondset={"c","cpp","SQL"}
+thisset.union(secondset)
+outut:
+{'java', 'c', 'python', 'cpp', 'Django', 'SQL'}
+6. Write a python program to add elements of list to a set
+thisset = {"Python", "Django", "JavaScript"}
+mylist = ["Java", "C"]
+thisset = {"Python", "Django", "JavaScript"}
+mylist = ["Java", "C"]
+thisset.union(mylist)
+output:
+{'Django', 'Python', 'C', 'JavaScript', 'Java'}
+
+7. Write a python program to remove last item of the given set
+thisset = {"Python", "Django", "JavaScript", “SQL”}
+thisset = {"Python", "Django", "JavaScript", "SQL"}
+thisset
+{'SQL', 'Django', 'JavaScript', 'Python'}
+thisset.discard("SQL")
+thisset
+output:
+{'Django', 'JavaScript', 'Python'}
+
+8. Write a python program to delete the set completely.
+thisset = {"Python", "Django", "JavaScript", "SQL"}
+thisset.clear()
+#output:
+thisset
+set()
+
+9. Write a python program to loop through the set and print values
+thisset = {"Python", "Django", "JavaScript", “SQL”}
+thisset = {"Python", "Django", "JavaScript", "SQL"}
+for e in thisset:
+    print(e)
+output:
+    
+SQL
+Django
+JavaScript
+Python
+
+10. Write a python program to find the maximum and minimum value in a set
+s1={4,9,7,6}
+max1=max(s1)
+max1
+9
+min1=min(s1)
+min1
+4
