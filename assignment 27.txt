@@ -1,0 +1,152 @@
+Assignment - 27 Full Stack Web Development using Python MySirG
+
+Exception Handling
+
+1. Write a python script to create a ArithmeticError
+a=9
+b=0
+try:
+  c=a/0
+output:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\python\program.py", line 3, in <module>
+    c=a/0
+ZeroDivisionError: division by zero
+
+2. Write a python script to create a ValueError
+import math
+math.sqrt(-10)
+output:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\python\program.py", line 2, in <module>
+    math.sqrt(-10)
+ValueError: math domain error
+
+
+3. Write a python script to handle the ArithmeticError
+a=9
+b=0
+try:
+  c=a/0
+except ZeroDivisionError:
+    print("number is not divisible")
+output:
+number is not divisible
+4. Write a python script to handle a ValueError
+import math
+x=int(input("enter a  number"))
+try:
+  math.sqrt(x)
+except ValueError:
+    print("enter a positive number")
+output:
+enter a  number-10
+enter a positive number
+5. Write a python script to handle multiple Exception in one try
+try:
+    name='bob'
+    name+=5
+except NameError :
+    print("invalid")
+except TypeError:
+    print("invalid")
+output:
+invalid
+6. Write a python script to create a calculator with 4 basic operations, and handle a
+maximum number of exceptions.
+def calculator(a,b):
+ try:
+    add=a+"b"
+ except TypeError:
+    print("enter a integer")
+ try:
+  div=a/0
+ except ZeroDivisionError:
+     print("invalid number")
+ try:
+   print(div)
+ except UnboundLocalError:
+     print("invalid statement")
+ try:
+  mult=a*b*c
+ except NameError:
+     print("enter a valid name")
+ try:
+  sub=2-"n"
+ except TypeError:
+  print("invalid type")
+calculator(5,9)
+output:
+enter a integer
+invalid number
+invalid statement
+enter a valid name
+invalid type
+
+7. Write a python script to add a finally block for the above script
+def calculator(a,b):
+ try:
+    add=a+"b"
+ except TypeError:
+    print("enter a integer")
+ try:
+  div=a/0
+ except ZeroDivisionError:
+     print("invalid number")
+ try:
+   print(div)
+ except UnboundLocalError:
+     print("invalid statement")
+ try:
+  mult=a*b*c
+ except NameError:
+     print("enter a valid name")
+ try:
+  sub=2-"n"
+ except TypeError:
+  print("invalid type")
+ finally:
+     print("SOMETHING WENT WRONG")
+calculator(5,9)
+  output:
+enter a integer
+invalid number
+invalid statement
+enter a valid name
+invalid type
+SOMETHING WENT WRONG
+
+
+
+8. Write a python script to implement try except and else block for division
+a=int(input("enter a valid number"))
+b=1
+try:
+ c=b/a
+except:
+ print("enter valid number")
+else:
+    print(c)
+output:
+enter a  number6
+0.16666666666666666
+
+9. Write a python script to raise a ValueError.
+try:
+    num=int("string")
+except ValueError:
+    raise ValueError("value error exception thrown")
+output:
+Traceback (most recent call last):
+  File "C:\Users\ADMIN\Desktop\python\program.py", line 4, in <module>
+    raise ValueError("value error exception thrown")
+ValueError: value error exception thrown
+10. Write a python script to implemented a nested Try Except block
+def __getattribute__(self,item):
+    try:
+        return object.__getattribute__(item)
+    except AttributeError:
+        try:
+            return self.dict[item]
+        except KeyError:
+            print("object dosent have sucvh attribute")
