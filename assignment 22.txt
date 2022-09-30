@@ -1,0 +1,130 @@
+Assignment - 22 Full Stack Web Development using Python MySirG
+
+More on Recursion
+
+1. Write a recursive python function to calculate sum of first N natural numbers
+def f1(n):
+    if  n==1:
+        return 1
+    else:
+      s=n+f1(n-1)
+      return s
+r=f1(5)
+print(r)
+output:
+15
+2. Write a recursive python function to calculate sum of first N odd natural numbers
+def f1(n):
+    if  n==0:
+        return 0
+    else:
+      s=((2*n)-1)+f1(n-1)
+      return s
+r=f1(5)
+print(r)
+output:
+25
+3. Write a recursive python function to calculate sum of first N even natural numbers
+def f1(n):
+    if  n==0:
+        return 0
+    else:
+      s=(2*n)+f1(n-1)
+      return s
+r=f1(5)
+print(r)
+output:
+30
+4. Write a recursive python function to calculate sum of squares of first N natural
+numbers
+def f1(n):
+    if  n==0:
+        return 0
+    else:
+      s=(n**2)+f1(n-1)
+      return s
+r=f1(5)
+print(r)
+output:
+55
+5. Write a recursive python function to calculate sum of cubes of first N natural numbers
+def f1(n):
+    if  n==0:
+        return 0
+    else:
+      s=(n**3)+f1(n-1)
+      return s
+r=f1(5)
+print(r)
+output:
+225
+6. Write a recursive python function to calculate the factorial of a number.
+def f1(n):
+    if  n==1:
+        return 1
+    else:
+      s=n*f1(n-1)
+      return s
+r=f1(5)
+print(r)
+output:
+120
+7. Write a recursive python function to calculate sum of the digits of a given number
+def f1(n):
+    if  n==0:
+        return 0
+        
+    if n!=0:
+      s=(n%10)+(n//10)
+      return s
+r=f1(44)
+print(r)
+output:
+8
+8. Write a recursive python function to print binary of a given decimal number.
+def f1(n):
+    if  n>1:
+        f1(n//2)
+
+    print(n%2,end=" ")
+      
+f1(17)
+output:
+1 0 0 0 1 
+9. Write a recursive python function to print octal of a given decimal number
+def f1(n):
+    if  n>1:
+        f1(n//8)
+
+    print(n%8,end=" ")
+      
+f1(17)
+output:
+0 2 1 
+10. Write a recursive python function to find the Nth term of the Fibonacci series.
+def fibo(n):
+    if  n<=1:
+        return n
+    else:
+        return(fibo(n-1)+fibo(n-2))
+nterm=10
+if nterm<=0:
+    print("enter a positive integer")
+else:
+    print("fibonacci sequence")
+    for i in range(nterm):
+        print(fibo(i))
+      
+fibo(17)
+output:
+fibonacci sequence
+0
+1
+1
+2
+3
+5
+8
+13
+21
+34
