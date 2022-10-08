@@ -1,0 +1,128 @@
+Assignment - 29 Full Stack Web Development using Python MySirG
+
+File Handling
+
+1. Write a Python script to print the following status of a file:
+a. Whether a file is read only.
+b. Whether a file is closed or not
+c. Which file opening mode is used
+d. Name of the file
+f=open("demo.txt",'r')
+f.read()
+f.close()
+
+
+2. Write a Python script to create a new file ‘myfile.txt’ and store user entered text.
+def  writing(filename,text):
+    f=open(filename,'w')
+    f.write(text)
+    f.close()
+writing("myfile.txt","welcome")
+output:
+welcome
+3. Write a Python script to read the above created file ‘myfile.txt’ and display content on
+the console.
+def  read(filename):
+    f=open(filename,'r')
+    
+    f.close()
+read("myfile.txt")
+output:
+welcome
+4. Write a Python script to store a list of city names in a file ‘cities.txt’
+city=["pune","mumbai","dheli","bell"]
+with open("cities.txt","w") as f:
+    for item in city:
+        f.write("%s\n" %item)
+        print("done")
+output:
+pune
+mumbai
+dheli
+bell
+
+5. Write a Python script to append list of city names in a file ‘cities.txt’
+city=["kalayn","varsoli"]
+with open("cities.txt","a") as f:
+    for item in city:
+        f.write("%s\n" %item)
+        print("done")
+output:
+pune
+mumbai
+dheli
+bell
+kalayn
+varsoli
+
+6. Write a Python script to search whether a particular city is there in the file ‘cities.txt’ or
+not
+def search(filename,city):
+    try:
+        f=open(filename,'r')
+        line_count=0
+        for line in f.readlines():
+            line_count+=1
+            strlist=line.split(" ")
+            word_count=0
+            for w in strlist:
+                word_count+=1
+            if city==w:
+                print(line_count,"found")
+            else:
+                print(None)
+
+    except FileNotFoundError:
+        print("file dose not found")
+search("cities.txt","mumbai")
+            
+output:
+2,found
+7. Write a Python script to count the number of Python keywords occurring in a python
+source file.
+def key(filename,keyword):
+    f=open(filename,"r")
+    for line in f.readlines():
+        l=line.split(" ")
+        key_count=0
+        for s in l:
+            if s==keyword:
+                key_count+=1
+                print(keyword,key_count)
+                
+    else:
+        print(None)
+key("project.py","if")
+
+output:
+if 6
+8. Write a Python script to create a copy of a file.
+import shutil
+shutil.copyfile("cities.txt","demo.txt")
+output:
+pune
+mumbai
+dheli
+bell
+kalayn
+varsoli
+
+9. Write a Python script to store book data in a file. Book data is in the form of a
+dictionary in which book name is the key and price is its value. Use pickle to store
+data into a file (say bookfile)
+import pickle
+book={'bname':'fire','bprize':200}
+f=open('bookinfo','ab')
+pickle.dump(book,f)
+f.close()
+
+10. Write a Python script to extract book data from a bookfile using pickle. Also print
+import pickle
+f=open('bookinfo','rb')
+s=pickle.load(f)
+for key in s:
+    print(key," :",s[key])
+f.close()
+output:
+bname  : fire
+bprize  : 200
