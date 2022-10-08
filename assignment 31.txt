@@ -1,0 +1,164 @@
+Assignment: 31 HTML
+
+Python Web Development in Hindi
+MySirG
+
+1. Add a "tooltip" to the paragraph below with the text "Python Web Development in
+Hindi".
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+<p>Python Web Development in Hindi</p>
+</body>
+</html>
+ans:-
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+  <div>
+<p  class="tooltip">Python Web Development in Hindi</p>
+</div>
+</body>
+</html>
+
+
+2. In the form below, add an input field with the type "button" and the value "OK".
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+  <form>
+    <input type="button" value="ok">
+  </form>
+</div>
+</body>
+</html>
+
+
+3. Inside a form tag, add two radio buttons, both with the name
+“programming_language”.
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HTML Page</title>
+</head>
+<body>
+  <form>
+    <p>select your languange</p>
+    <input type="radio" id="python" name="l" value="python" >
+    <label for="python">python</label><br>
+    <input type="radio" id="java" name="l" value="java">
+    <label for="java">java</label><br>
+    <br><input type="button" value="ok"><br>
+  </form>
+</div>
+</body>
+</html>
+4. Inside a form tag, add an empty drop down list with the name “food_menu”.
+<select>
+      <option>food menu</option>
+      <option>veg kofta</option>
+      <option>kaju masala</option>
+      <option>dal fry</option>
+      <option>aloo palak</option>
+      <option>chicken handi</option>
+    </select>
+  </form>
+
+5. Inside a form tag, add a text area with the name "note".
+<form>
+div>
+    <textarea
+    placeholder="note"
+    role="20"
+    cols="20"></textarea>
+     </div> 
+</form>
+
+
+6. Inside a form tag, add a submit button with the value "Submit Form".
+<form>
+<div>
+    <br><button>submit</button><br>
+    </div>
+ </form>
+
+7. Disable the input field below.
+
+Untitled 2
+<form action="/register">
+<input type="text">
+</form>
+ans:-
+ <form action="/register">
+    <label for="fname">fname:</label>
+  <input type="text" disabled ><br>
+  </form> 
+
+
+8. Restrict the maximum number of characters allowed in the input field to 10.
+Note: You should not include any Javascript
+
+<form action="/register">
+<input type="text">
+</form>
+
+ans:-
+<form action="/register">
+    <label for="fname">fname:</label>
+  <input type="text" min="1" max="10"><br>
+  </form> 
+
+9. Inside form tag, add an input field that accepts only .png files.
+<form>
+<input type="file"  id="image" accept=".png">
+  <button>submit</button>
+</form> 
+
+
+10. Add a table row with two table headers. The two table headers should have the
+value "Index" and "Topic"
+<table>
+    <caption>language</caption>
+    <tr>
+      <td></td>
+        <th scope="col">index</th>
+        <th scope="col">topic</th>
+      
+    </tr>
+    <tr>
+      <th scope="row"></th>
+      <td>1</td>
+      <td>python</td>
+   </tr>
+   <tr>
+    <th scope="row"></th>
+    <td>2</td>
+    <td>javascript</td>
+   </tr>
+   <tr>
+    <th scope="row"></th>
+      <td>3</td>
+      <td>RUST</td>
+   </tr>
+   <tr>
+    <th scope="row"></th>
+    <td>4</td>
+    <td>Matlab</td>
+   </tr>
+output:
+	index	topic
+1	python
+2	javascript
+3	RUST
+4	Matlab
